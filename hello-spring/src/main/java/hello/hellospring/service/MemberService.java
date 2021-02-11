@@ -3,10 +3,16 @@ package hello.hellospring.service;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * JPA를 사용하면 항상 Transactional이 필요함
+ * 필요한 메서드 위에만 작성해도 됨
+ */
+@Transactional
 public class MemberService {
     // 회원 서비스 코드를 DI(의존성 주입)가 가능하게 변경
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
