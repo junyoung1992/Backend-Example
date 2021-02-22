@@ -21,6 +21,10 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	// Provider 추가
+	implementation 'javax.inject:javax.inject:1'
+	// Web 라이브러리 추기
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 	// lombok 라이브러리 추가
 	compileOnly 'org.projectlombok:lombok'
