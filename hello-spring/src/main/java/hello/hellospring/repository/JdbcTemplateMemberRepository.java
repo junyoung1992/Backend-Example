@@ -11,6 +11,7 @@ import javax.sql.DataSource;
 import java.util.*;
 
 public class JdbcTemplateMemberRepository implements MemberRepository {
+
     private final JdbcTemplate jdbcTemplate;
 
     // 생성자가 딱 하나일 경우 Autowired 생략 가능
@@ -69,4 +70,5 @@ public class JdbcTemplateMemberRepository implements MemberRepository {
             return member;
         };
     }
+
 }

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class MemoryMemberRepositoryTest {
+
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach
@@ -65,4 +66,5 @@ public class MemoryMemberRepositoryTest {
         // Then
         assertThat(result.size()).isEqualTo(2);
     }
+
 }

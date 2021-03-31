@@ -14,6 +14,7 @@ import java.util.Optional;
  */
 @Transactional
 public class MemberService {
+
     // 회원 서비스 코드를 DI(의존성 주입)가 가능하게 변경
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
@@ -48,4 +49,5 @@ public class MemberService {
     public Optional<Member> findOne(Long memberId) {
         return memberRepository.findById(memberId);
     }
+
 }

@@ -11,7 +11,7 @@
 <%@ page import="java.util.List" %>
 <%
     MemberRepository memberRepository = MemberRepository.getInstance();
-    List<Member> members = memberRepository.finaAll();
+    List<Member> members = memberRepository.findAll();
 %>
 <html>
 <head>

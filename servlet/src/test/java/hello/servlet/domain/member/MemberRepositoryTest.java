@@ -39,7 +39,7 @@ class MemberRepositoryTest {
         memberRepository.save(member2);
 
         // when
-        List<Member> result = memberRepository.finaAll();
+        List<Member> result = memberRepository.findAll();
 
         // then
         assertThat(result.size()).isEqualTo(2);

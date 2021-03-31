@@ -6,6 +6,7 @@ import java.util.*;
 
 // 동시성 문제가 고려되지 않음. 실무에서는 ConcurrentHashMap, AtomicLong 등 사용
 public class MemoryMemberRepository implements MemberRepository {
+
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
@@ -36,4 +37,5 @@ public class MemoryMemberRepository implements MemberRepository {
     public void clearStore() {
         store.clear();
     }
+
 }

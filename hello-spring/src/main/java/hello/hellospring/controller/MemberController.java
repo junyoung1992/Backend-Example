@@ -12,6 +12,7 @@ import java.util.List;
 
 @Controller
 public class MemberController {
+
     private final MemberService memberService;
 
     @Autowired
@@ -40,4 +41,5 @@ public class MemberController {
         model.addAttribute("members", members);
         return "members/memberList";
     }
+
 }

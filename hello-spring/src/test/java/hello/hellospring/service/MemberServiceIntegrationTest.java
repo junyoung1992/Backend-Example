@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @SpringBootTest
 @Transactional  // 테스트가 끝나면 롤백함
 class MemberServiceIntegrationTest {
+
     // 테스트할 때는 편한게 좋음
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
@@ -47,4 +48,5 @@ class MemberServiceIntegrationTest {
 
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
     }
+
 }

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class JpaMemberRepository implements MemberRepository{
+
     // JPA는 EntityManager로 동작
     private final EntityManager em;
 
@@ -39,4 +40,5 @@ public class JpaMemberRepository implements MemberRepository{
     public List<Member> findAll() {
         return em.createQuery("SELECT m FROM Member m", Member.class).getResultList();
     }
+
 }

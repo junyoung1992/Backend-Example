@@ -10,6 +10,7 @@ import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MemberServiceTest {
+
     MemberService memberService;
     MemoryMemberRepository memberRepository;
 
@@ -54,4 +55,5 @@ class MemberServiceTest {
 
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
     }
+
 }
