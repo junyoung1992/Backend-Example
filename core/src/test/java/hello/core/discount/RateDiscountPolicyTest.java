@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
 class RateDiscountPolicyTest {
+
     RateDiscountPolicy discountPolicy = new RateDiscountPolicy();
 
     @Test
@@ -35,4 +36,5 @@ class RateDiscountPolicyTest {
         // Then
         assertThat(discount).isEqualTo(0);
     }
+
 }

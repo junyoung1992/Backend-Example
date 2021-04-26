@@ -55,6 +55,8 @@ public class SingletonTest {
     @DisplayName("스프링 컨테이너와 싱글톤")
     void springContainer() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        // 호출할 때마다 같은 객체를 반환
         MemberService memberService1 = ac.getBean("memberService", MemberService.class);
         MemberService memberService2 = ac.getBean("memberService", MemberService.class);
 
@@ -62,6 +64,7 @@ public class SingletonTest {
         System.out.println("memberService1 = " + memberService1);
         System.out.println("memberService2 = " + memberService2);
 
+        // memberService1 != memberService2
         assertThat(memberService1).isSameAs(memberService2);
     }
 
