@@ -13,6 +13,7 @@ import java.nio.charset.StandardCharsets;
 
 @WebServlet(name = "requestBodyServlet", urlPatterns = "/request-body-string")
 public class RequestBodyStringServlet extends HttpServlet {
+
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletInputStream inputStream = request.getInputStream();
@@ -22,4 +23,5 @@ public class RequestBodyStringServlet extends HttpServlet {
 
         response.getWriter().write("OK.");
     }
+
 }

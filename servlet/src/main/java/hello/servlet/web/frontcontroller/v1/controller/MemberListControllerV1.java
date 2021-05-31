@@ -25,4 +25,5 @@ public class MemberListControllerV1 implements ControllerV1 {
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request, response);
     }
+
 }

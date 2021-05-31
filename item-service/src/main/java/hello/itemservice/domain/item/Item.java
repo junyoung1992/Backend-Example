@@ -16,7 +16,6 @@ public class Item {
     private Integer quantity;
 
     public Item() {
-
     }
 
     public Item(String itemName, Integer price, Integer quantity) {

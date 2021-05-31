@@ -18,4 +18,5 @@ public class MemberListControllerV4 implements ControllerV4 {
         model.put("members", members);
         return "members";
     }
+
 }

@@ -65,7 +65,7 @@ public class BasicItemController {
 
     /**
      * @ModelAttribute Item item
-     * 클래스 이름 첫 글자를 소문자로 변경해서 ModelAttribute로 사용
+     * 클래스 이름 첫 글자를 소문자로 변경해서 ModelAttribute 로 사용
      * Item -> item
      */
 //    @PostMapping("/add")
@@ -102,7 +102,7 @@ public class BasicItemController {
         Item savedItem = itemRepository.save(item);
         redirectAttributes.addAttribute("itemId", savedItem.getId());
         redirectAttributes.addAttribute("status", true);
-        return "redirect:/basic/items/" + item.getId();
+        return "redirect:/basic/items/{itemId}";
     }
 
     @GetMapping("/{itemId}/edit")
@@ -114,8 +114,7 @@ public class BasicItemController {
 
     @PostMapping("/{itemId}/edit")
     public String edit(@PathVariable Long itemId,
-                       @ModelAttribute Item item,
-                       Model model) {
+                       @ModelAttribute Item item) {
         itemRepository.update(itemId, item);
         return "redirect:/basic/items/{itemId}";
     }

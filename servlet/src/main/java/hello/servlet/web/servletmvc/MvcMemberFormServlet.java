@@ -17,4 +17,5 @@ public class MvcMemberFormServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request, response);
     }
+
 }

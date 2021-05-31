@@ -15,4 +15,5 @@ public class MyHttpRequestHandler implements HttpRequestHandler {
     public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("MyHttpRequestHandler.handleRequest");
     }
+
 }
