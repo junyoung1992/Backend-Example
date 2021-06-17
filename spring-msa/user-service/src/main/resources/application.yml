@@ -1,0 +1,16 @@
+server:
+  # port: 9001
+  port: 0 # 랜덤 포트 사용
+
+spring:
+  application:
+    name: user-service
+
+eureka:
+  client:
+    register-with-eureka: true  # Eureka 를 등록한다.
+    fetch-registry: true        # 외부에서 검색 가능한 형태로 만든한다.
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance.id:${random.value}}
