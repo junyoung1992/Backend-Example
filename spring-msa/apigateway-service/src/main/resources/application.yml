@@ -45,15 +45,15 @@ spring:
 #          uri: lb://USER-SERVICE
 #          predicates:
 #            - Path=/user-service/**
-        - id: user-service
+        - id: user-service  # Login 은 권한 없이 접근 가능
           uri: lb://USER-SERVICE
           predicates:
             - Path=/user-service/login
             - Method=POST
           filters:
-            - RemoveRequestHeader=Cookie  # POST로 전달되는 Header 값을 매번 새로운 값처럼 처리하도록
+            - RemoveRequestHeader=Cookie  # POST 로 전달되는 Header 값을 매번 새로운 값처럼 처리하도록
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
-        - id: user-service
+        - id: user-service  # 회원 가입도 권한 없이 접근 가능
           uri: lb://USER-SERVICE
           predicates:
             - Path=/user-service/users
@@ -61,7 +61,7 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
-        - id: user-service
+        - id: user-service  # 그 외의 작업, 회원 정보 조회 등은 권한이 있어야 동작
           uri: lb://USER-SERVICE
           predicates:
             - Path=/user-service/**
@@ -69,6 +69,7 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie  # POST 로 전달되는 Header 값을 매번 새로운 값처럼 처리하도록
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+            - AuthorizationHeaderFilter
         - id: catalog-service
           uri: lb://CATALOG-SERVICE
           predicates:
@@ -77,3 +78,6 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/order-service/**
+
+token:
+  secret: user_token  # 임의의 값 (plain text 조합)
