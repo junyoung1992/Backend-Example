@@ -29,8 +29,12 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
         // http.authorizeRequests().antMatchers("/users/**").permitAll();  // "/users/**" URI 허용
+
+        // Actuator 정보는 권한 없이 사용할 수 있도록 설정
+        http.authorizeRequests().antMatchers("/actuator/**").permitAll();
+
         http.authorizeRequests().antMatchers("/**")    // 모든 작업을 우선 차단
-                .hasIpAddress("172.30.1.54")    // 허용할 IP
+                .hasIpAddress("172.30.1.9")    // 허용할 IP
                 .and()
                 .addFilter(getAuthenticationFilter());
 

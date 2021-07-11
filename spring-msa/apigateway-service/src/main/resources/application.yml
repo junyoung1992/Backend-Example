@@ -45,6 +45,14 @@ spring:
 #          uri: lb://USER-SERVICE
 #          predicates:
 #            - Path=/user-service/**
+        - id: user-service  # Actuator 는 권한 없이 접근 가능
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
         - id: user-service  # Login 은 권한 없이 접근 가능
           uri: lb://USER-SERVICE
           predicates:
@@ -78,6 +86,17 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/order-service/**
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
-token:
-  secret: user_token  # 임의의 값 (plain text 조합)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh
+
+#token:
+#  secret: user_token  # 임의의 값 (plain text 조합)
