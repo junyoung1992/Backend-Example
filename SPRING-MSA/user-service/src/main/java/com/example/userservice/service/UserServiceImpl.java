@@ -1,45 +1,48 @@
 package com.example.userservice.service;
 
+import com.example.userservice.client.OrderServiceClient;
 import com.example.userservice.dto.UserDto;
 import com.example.userservice.jpa.UserEntity;
 import com.example.userservice.jpa.UserRepository;
 import com.example.userservice.vo.ResponseOrder;
+import feign.FeignException;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.env.Environment;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService{
 
     UserRepository userRepository;
     BCryptPasswordEncoder passwordEncoder;
 
     Environment env;
-    RestTemplate restTemplate;
+//    RestTemplate restTemplate;
+    OrderServiceClient orderServiceClient;
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository,
                            BCryptPasswordEncoder passwordEncoder,
                            Environment env,
-                           RestTemplate restTemplate) {
+//                           RestTemplate restTemplate
+                           OrderServiceClient orderServiceClient) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.env = env;
-        this.restTemplate = restTemplate;
+//        this.restTemplate = restTemplate;
+        this.orderServiceClient = orderServiceClient;
     }
 
     @Override
@@ -80,15 +83,31 @@ public class UserServiceImpl implements UserService{
 
         UserDto userDto = new ModelMapper().map(userEntity, UserDto.class);
 
-//        List<ResponseOrder> orders = new ArrayList<>(); // Order 서비스를 아직 만들지 않아서...
-        String orderUrl = String.format(env.getProperty("order_service.url"), userId);
-        /* Using as restTemplate */
-        ResponseEntity<List<ResponseOrder>> orderListResponse =
-                restTemplate.exchange(orderUrl, HttpMethod.GET, null,
-                        new ParameterizedTypeReference<List<ResponseOrder>>() {
-        });
+//        String orderUrl = String.format(env.getProperty("order_service.url"), userId);
+//        /* Using as restTemplate */
+//       ResponseEntity<List<ResponseOrder>> orderListResponse =
+//                restTemplate.exchange(orderUrl, HttpMethod.GET, null,
+//                        new ParameterizedTypeReference<List<ResponseOrder>>() {
+//        });
 
-        List<ResponseOrder> ordersList = orderListResponse.getBody();
+//        List<ResponseOrder> ordersList = orderListResponse.getBody();
+
+        /* Using a feign client */
+        /* Feign exception handling */
+        // RestTemplate 보다 직관적으로 MSA 적용 가능
+        // 인터페이스 안에 또다른 어플리케이션의 메서드를 호출하기 때문에
+        // 두 어플리케이션을 다 잘 알지 못하면 제대로 동작을 파악하지 못할 수도 있음
+//        List<ResponseOrder> ordersList = null;
+//
+//        try {
+//            ordersList = orderServiceClient.getOrders(userId);
+//        } catch (FeignException ex) {
+//            log.error(ex.getMessage());
+//        }
+
+        /* ErrorDecoder */
+        List<ResponseOrder> ordersList = orderServiceClient.getOrders(userId);
+
         userDto.setOrders(ordersList);
 
         return userDto;
