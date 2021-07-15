@@ -40,9 +40,7 @@ public class OrderController {
         Iterable<OrderEntity> orderList = orderService.getOrdersByUserId(userId);
 
         List<ResponseOrder> result = new ArrayList<>();
-        orderList.forEach(v -> {
-            result.add(new ModelMapper().map(v, ResponseOrder.class));
-        });
+        orderList.forEach(v -> result.add(new ModelMapper().map(v, ResponseOrder.class)));
 
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
