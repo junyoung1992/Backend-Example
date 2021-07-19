@@ -9,4 +9,5 @@ public interface OrderService {
     OrderDto getOrderByOrderId(String orderId);
     Iterable<OrderEntity> getOrdersByUserId(String userId);
 
+    Iterable<OrderEntity> getOrderByAll();
 }

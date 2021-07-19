@@ -34,7 +34,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/actuator/**").permitAll();
 
         http.authorizeRequests().antMatchers("/**")    // 모든 작업을 우선 차단
-                .hasIpAddress("172.30.1.9")    // 허용할 IP
+                .hasIpAddress("172.30.1.16")    // 허용할 IP
                 .and()
                 .addFilter(getAuthenticationFilter());
 

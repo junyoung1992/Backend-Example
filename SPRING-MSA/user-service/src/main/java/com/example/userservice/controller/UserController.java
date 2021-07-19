@@ -49,21 +49,8 @@ public class UserController {
         return greeting.getMessage();
     }
 
-    @GetMapping("/users")
-    public ResponseEntity<List<ResponseUser>> getUsers() {
-        Iterable<UserEntity> userList = userService.getUserByAll();
-
-        List<ResponseUser> result = new ArrayList<>();
-        userList.forEach(v ->{
-                result.add(new ModelMapper().map(v, ResponseUser.class));
-        });
-
-        return ResponseEntity.status(HttpStatus.OK).body(result);
-    }
-
     @PostMapping("/users")
     public ResponseEntity<ResponseUser> createUser(@RequestBody RequestUser user) {
-
         // user -> userDto
         ModelMapper mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
@@ -76,6 +63,18 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(responseUser);
     }
 
+    @GetMapping("/users")
+    public ResponseEntity<List<ResponseUser>> getUsers() {
+        Iterable<UserEntity> userList = userService.getUserByAll();
+
+        List<ResponseUser> result = new ArrayList<>();
+        userList.forEach(v ->{
+            result.add(new ModelMapper().map(v, ResponseUser.class));
+        });
+
+        return ResponseEntity.status(HttpStatus.OK).body(result);
+    }
+
     @GetMapping("/users/{userId}")
     public ResponseEntity<ResponseUser> getUsers(@PathVariable String userId) {
         UserDto userDto = userService.getUserByUserId(userId);
@@ -83,6 +82,21 @@ public class UserController {
         ResponseUser returnValue = new ModelMapper().map(userDto, ResponseUser.class);
 
         return ResponseEntity.status(HttpStatus.OK).body(returnValue);
+    }
+
+    @PutMapping("/users/{userId}")
+    public ResponseEntity<ResponseUser> updateUser(@PathVariable String userId,
+                                                   @RequestBody RequestUser user) {
+        // user -> userDto
+        ModelMapper mapper = new ModelMapper();
+        mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+
+        UserDto userDto = mapper.map(user, UserDto.class);
+        UserDto updateUser = userService.updateByUserId(userId, userDto);
+
+        ResponseUser responseUser = mapper.map(updateUser, ResponseUser.class);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseUser);
     }
 
 }
