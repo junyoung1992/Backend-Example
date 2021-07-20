@@ -82,10 +82,24 @@ spring:
           uri: lb://CATALOG-SERVICE
           predicates:
             - Path=/catalog-service/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/catalog-service/(?<segment>.*), /$\{segment}
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/order-service/actuator/**
+            - Method=GET, POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/order-service/(?<segment>.*), /$\{segment}
         - id: order-service
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/order-service/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/order-service/(?<segment>.*), /$\{segment}
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -96,7 +110,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, beans, httptrace, busrefresh
+        include: refresh, health, beans, httptrace, busrefresh, info, metrics, prometheus
 
 #token:
 #  secret: user_token  # 임의의 값 (plain text 조합)

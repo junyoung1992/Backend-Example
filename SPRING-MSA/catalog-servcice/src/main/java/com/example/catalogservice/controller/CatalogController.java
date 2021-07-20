@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/catalog-service")
+@RequestMapping("/")
 public class CatalogController {
 
     Environment env;
