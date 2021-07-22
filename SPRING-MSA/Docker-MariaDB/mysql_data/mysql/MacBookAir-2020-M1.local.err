@@ -1,0 +1,1689 @@
+210714 23:58:06 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-14 23:58:07 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 23555 ...
+2021-07-14 23:58:07 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-14 23:58:07 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-14 23:58:07 0 [Note] InnoDB: Number of pools: 1
+2021-07-14 23:58:07 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-14 23:58:07 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-14 23:58:07 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-14 23:58:07 0 [Note] InnoDB: 128 rollback segments are active.
+2021-07-14 23:58:07 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-07-14 23:58:07 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-07-14 23:58:07 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-07-14 23:58:07 0 [Note] InnoDB: 10.6.3 started; log sequence number 42161; transaction id 14
+2021-07-14 23:58:07 0 [Note] InnoDB: Loading buffer pool(s) from /opt/homebrew/var/mysql/ib_buffer_pool
+2021-07-14 23:58:07 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-14 23:58:07 0 [Note] InnoDB: Buffer pool(s) load completed at 210714 23:58:07
+2021-07-14 23:58:07 0 [Note] Server socket created on IP: '::'.
+2021-07-14 23:58:07 0 [Note] Server socket created on IP: '0.0.0.0'.
+2021-07-14 23:58:07 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd: ready for connections.
+Version: '10.6.3-MariaDB'  socket: '/tmp/mysql.sock'  port: 3306  Homebrew
+210715 00:00:34 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-15  0:00:34 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 24320 ...
+2021-07-15  0:00:34 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-15  0:00:34 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-15  0:01:04 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-15  0:01:04 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-15  0:01:04 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-15  0:01:04 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-15  0:01:04 0 [Note] InnoDB: Number of pools: 1
+2021-07-15  0:01:04 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-15  0:01:04 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-15  0:01:04 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-15  0:01:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:04 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-15  0:01:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:11 5 [Warning] Access denied for user 'root'@'localhost'
+2021-07-15  0:01:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:01:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:01:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:03 6 [Warning] Access denied for user 'root'@'localhost'
+2021-07-15  0:02:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:07 7 [Warning] Access denied for user 'root'@'localhost'
+2021-07-15  0:02:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15  0:02:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15  0:02:44 0 [Note] InnoDB: Unable to open the first data file
+2021-07-15  0:02:44 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-15  0:02:44 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-15  0:02:44 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-15  0:02:44 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-15  0:02:44 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-15  0:02:44 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-15  0:02:44 0 [Note] InnoDB: Starting shutdown...
+2021-07-15  0:02:45 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-15  0:02:45 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-15  0:02:45 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-15  0:02:45 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-15  0:02:45 0 [ERROR] Failed to initialize plugins.
+2021-07-15  0:02:45 0 [ERROR] Aborting
+210715 00:02:45 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+2021-07-15  0:16:10 11 [Warning] Access denied for user 'root'@'localhost'
+210715 22:49:59 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-15 22:49:59 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 44758 ...
+2021-07-15 22:49:59 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-15 22:49:59 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-15 22:50:29 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-15 22:50:29 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-15 22:50:29 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-15 22:50:29 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-15 22:50:29 0 [Note] InnoDB: Number of pools: 1
+2021-07-15 22:50:29 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-15 22:50:29 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-15 22:50:29 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-15 22:50:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:29 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-15 22:50:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:50:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:50:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:51:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:51:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-15 22:52:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-15 22:52:10 0 [Note] InnoDB: Unable to open the first data file
+2021-07-15 22:52:10 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-15 22:52:10 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-15 22:52:10 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-15 22:52:10 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-15 22:52:10 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-15 22:52:10 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-15 22:52:10 0 [Note] InnoDB: Starting shutdown...
+2021-07-15 22:52:10 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-15 22:52:10 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-15 22:52:10 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-15 22:52:10 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-15 22:52:10 0 [ERROR] Failed to initialize plugins.
+2021-07-15 22:52:10 0 [ERROR] Aborting
+210715 22:52:10 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+2021-07-16  0:17:15 15 [Warning] Aborted connection 15 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2021-07-16  0:17:16 16 [Warning] Aborted connection 16 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2021-07-16  0:48:52 20 [Warning] Aborted connection 20 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+210717 17:16:19 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-17 17:16:19 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 4388 ...
+2021-07-17 17:16:19 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-17 17:16:19 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-17 17:16:50 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-17 17:16:50 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-17 17:16:50 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-17 17:16:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-17 17:16:50 0 [Note] InnoDB: Number of pools: 1
+2021-07-17 17:16:50 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-17 17:16:50 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-17 17:16:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-17 17:16:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:50 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-17 17:16:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:16:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:16:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:17:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:17:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 17:18:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 17:18:30 0 [Note] InnoDB: Unable to open the first data file
+2021-07-17 17:18:30 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-17 17:18:30 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-17 17:18:30 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-17 17:18:30 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-17 17:18:30 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-17 17:18:30 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-17 17:18:30 0 [Note] InnoDB: Starting shutdown...
+2021-07-17 17:18:30 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-17 17:18:30 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-17 17:18:30 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-17 17:18:30 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-17 17:18:30 0 [ERROR] Failed to initialize plugins.
+2021-07-17 17:18:30 0 [ERROR] Aborting
+210717 17:18:30 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+2021-07-17 18:40:05 27 [Warning] Access denied for user 'root'@'localhost'
+2021-07-17 19:14:18 28 [Warning] Aborted connection 28 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+210717 23:33:26 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-17 23:33:26 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 80294 ...
+2021-07-17 23:33:26 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-17 23:33:27 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-17 23:33:57 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-17 23:33:57 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-17 23:33:57 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-17 23:33:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-17 23:33:57 0 [Note] InnoDB: Number of pools: 1
+2021-07-17 23:33:57 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-17 23:33:57 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-17 23:33:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-17 23:33:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:33:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:33:57 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-17 23:33:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:33:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:33:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:33:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:34:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:34:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-17 23:35:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-17 23:35:37 0 [Note] InnoDB: Unable to open the first data file
+2021-07-17 23:35:37 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-17 23:35:37 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-17 23:35:37 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-17 23:35:37 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-17 23:35:37 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-17 23:35:37 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-17 23:35:37 0 [Note] InnoDB: Starting shutdown...
+2021-07-17 23:35:37 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-17 23:35:37 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-17 23:35:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-17 23:35:37 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-17 23:35:37 0 [ERROR] Failed to initialize plugins.
+2021-07-17 23:35:37 0 [ERROR] Aborting
+210717 23:35:37 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+210719 18:05:27 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-19 18:05:27 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 29123 ...
+2021-07-19 18:05:27 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-19 18:05:27 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-19 18:05:57 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-19 18:05:57 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-19 18:05:57 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-19 18:05:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-19 18:05:57 0 [Note] InnoDB: Number of pools: 1
+2021-07-19 18:05:57 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-19 18:05:57 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-19 18:05:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-19 18:05:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:05:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:05:57 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-19 18:05:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:05:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:05:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:05:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:06:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:06:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 18:07:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 18:07:37 0 [Note] InnoDB: Unable to open the first data file
+2021-07-19 18:07:37 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-19 18:07:37 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-19 18:07:37 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-19 18:07:37 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-19 18:07:37 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-19 18:07:37 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-19 18:07:37 0 [Note] InnoDB: Starting shutdown...
+2021-07-19 18:07:38 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-19 18:07:38 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-19 18:07:38 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-19 18:07:38 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-19 18:07:38 0 [ERROR] Failed to initialize plugins.
+2021-07-19 18:07:38 0 [ERROR] Aborting
+210719 18:07:38 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+2021-07-19 18:28:46 55 [Warning] Aborted connection 55 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 18:39:27 84 [Warning] Aborted connection 84 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:03:38 110 [Warning] Aborted connection 110 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:09:43 134 [Warning] Aborted connection 134 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:12:29 137 [Warning] Aborted connection 137 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:12:55 139 [Warning] Aborted connection 139 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2021-07-19 19:12:56 140 [Warning] Aborted connection 140 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2021-07-19 19:13:01 141 [Warning] Aborted connection 141 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2021-07-19 19:13:10 142 [Warning] Aborted connection 142 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2021-07-19 19:15:52 145 [Warning] Aborted connection 145 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:16:14 149 [Warning] Aborted connection 149 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:26:17 153 [Warning] Aborted connection 153 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:38:22 178 [Warning] Aborted connection 178 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:45:19 181 [Warning] Aborted connection 181 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:51:37 206 [Warning] Aborted connection 206 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 19:55:29 273 [Warning] Access denied for user 'root'@'localhost'
+2021-07-19 19:56:49 229 [Warning] Aborted connection 229 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 20:02:52 277 [Warning] Aborted connection 277 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 20:06:06 292 [Warning] Aborted connection 292 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2021-07-19 22:28:57 296 [Warning] Aborted connection 296 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+210719 23:59:27 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-19 23:59:27 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 26897 ...
+2021-07-19 23:59:27 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-19 23:59:27 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-19 23:59:57 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-19 23:59:57 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-19 23:59:57 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-19 23:59:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-19 23:59:57 0 [Note] InnoDB: Number of pools: 1
+2021-07-19 23:59:57 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-19 23:59:57 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-19 23:59:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-19 23:59:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 23:59:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 23:59:57 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-19 23:59:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 23:59:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-19 23:59:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-19 23:59:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:00:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:00:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20  0:01:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20  0:01:37 0 [Note] InnoDB: Unable to open the first data file
+2021-07-20  0:01:37 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-20  0:01:37 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-20  0:01:37 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-20  0:01:37 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-20  0:01:37 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-20  0:01:37 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-20  0:01:37 0 [Note] InnoDB: Starting shutdown...
+2021-07-20  0:01:37 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-20  0:01:37 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-20  0:01:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-20  0:01:37 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-20  0:01:37 0 [ERROR] Failed to initialize plugins.
+2021-07-20  0:01:37 0 [ERROR] Aborting
+210720 00:01:37 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+2021-07-20  0:37:57 424 [Warning] Aborted connection 424 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+210720 20:35:19 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-20 20:35:20 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 90942 ...
+2021-07-20 20:35:20 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-20 20:35:20 0 [ERROR] mariadbd: Can't lock aria control file '/opt/homebrew/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2021-07-20 20:35:50 0 [ERROR] mariadbd: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/opt/homebrew/var/mysql/aria_log_control'
+2021-07-20 20:35:50 0 [ERROR] Plugin 'Aria' init function returned error.
+2021-07-20 20:35:50 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2021-07-20 20:35:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-20 20:35:50 0 [Note] InnoDB: Number of pools: 1
+2021-07-20 20:35:50 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-20 20:35:50 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-20 20:35:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-20 20:35:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:50 0 [Note] InnoDB: Retrying to lock the first data file
+2021-07-20 20:35:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:35:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:35:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:31 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:31 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:32 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:32 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:33 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:33 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:34 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:34 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:35 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:35 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:36 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:36 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:37 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:37 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:38 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:38 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:39 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:39 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:40 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:40 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:41 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:41 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:42 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:42 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:43 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:43 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:44 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:44 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:45 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:45 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:46 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:46 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:47 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:47 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:48 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:48 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:49 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:49 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:50 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:50 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:51 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:51 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:52 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:52 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:53 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:53 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:54 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:54 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:55 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:55 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:56 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:56 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:57 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:57 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:58 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:58 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:36:59 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:36:59 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:00 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:00 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:01 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:01 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:02 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:02 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:03 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:03 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:04 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:04 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:05 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:05 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:06 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:06 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:07 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:07 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:08 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:08 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:09 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:09 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:10 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:10 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:11 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:11 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:12 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:12 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:13 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:13 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:14 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:14 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:15 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:15 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:16 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:16 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:17 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:17 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:18 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:18 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:19 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:19 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:20 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:20 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:21 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:21 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:22 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:22 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:23 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:23 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:24 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:24 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:25 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:25 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:26 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:26 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:27 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:27 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:28 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:28 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:29 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:29 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:30 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 35
+2021-07-20 20:37:30 0 [Note] InnoDB: Check that you do not already have another mariadbd process using the same InnoDB data or log files.
+2021-07-20 20:37:30 0 [Note] InnoDB: Unable to open the first data file
+2021-07-20 20:37:30 0 [ERROR] InnoDB: Operating system error number 35 in a file operation.
+2021-07-20 20:37:30 0 [ERROR] InnoDB: Error number 35 means 'Resource temporarily unavailable'
+2021-07-20 20:37:30 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+2021-07-20 20:37:30 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-07-20 20:37:30 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-07-20 20:37:30 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-07-20 20:37:30 0 [Note] InnoDB: Starting shutdown...
+2021-07-20 20:37:30 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-07-20 20:37:30 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-07-20 20:37:30 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-20 20:37:30 0 [ERROR] Could not open mysql.plugin table: "Unknown storage engine 'Aria'". Some plugins may be not loaded
+2021-07-20 20:37:30 0 [ERROR] Failed to initialize plugins.
+2021-07-20 20:37:30 0 [ERROR] Aborting
+210720 20:37:30 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+2021-07-20 21:49:15 440 [Warning] Aborted connection 440 to db: 'mydb' user: 'root' host: 'localhost' (Got an error reading communication packets)
+210720 23:14:12 mysqld_safe mysqld from pid file /opt/homebrew/var/mysql/MacBookAir-2020-M1.local.pid ended
+210721 23:38:22 mysqld_safe Starting mariadbd daemon with databases from /opt/homebrew/var/mysql
+2021-07-21 23:38:23 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd (mysqld 10.6.3-MariaDB) starting as process 54952 ...
+2021-07-21 23:38:23 0 [Warning] Setting lower_case_table_names=2 because file system for /opt/homebrew/var/mysql/ is case insensitive
+2021-07-21 23:38:23 0 [Note] mariadbd: Aria engine: starting recovery
+recovered pages: 0% 100% (0.0 seconds); tables to flush: 1 0
+ (0.0 seconds); 
+2021-07-21 23:38:23 0 [Note] mariadbd: Aria engine: recovery done
+2021-07-21 23:38:23 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-07-21 23:38:23 0 [Note] InnoDB: Number of pools: 1
+2021-07-21 23:38:23 0 [Note] InnoDB: Using generic crc32 instructions
+2021-07-21 23:38:23 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2021-07-21 23:38:23 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-07-21 23:38:23 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=42161,42161
+2021-07-21 23:38:23 0 [Note] InnoDB: Starting final batch to recover 15 pages from redo log.
+2021-07-21 23:38:23 0 [Note] InnoDB: 128 rollback segments are active.
+2021-07-21 23:38:23 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2021-07-21 23:38:23 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-07-21 23:38:23 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-07-21 23:38:23 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-07-21 23:38:23 0 [Note] InnoDB: 10.6.3 started; log sequence number 91195; transaction id 179
+2021-07-21 23:38:23 0 [Note] Plugin 'FEEDBACK' is disabled.
+2021-07-21 23:38:23 0 [Note] InnoDB: Loading buffer pool(s) from /opt/homebrew/var/mysql/ib_buffer_pool
+2021-07-21 23:38:23 0 [Note] InnoDB: Buffer pool(s) load completed at 210721 23:38:23
+2021-07-21 23:38:23 0 [Note] Server socket created on IP: '::'.
+2021-07-21 23:38:23 0 [Note] Server socket created on IP: '0.0.0.0'.
+2021-07-21 23:38:23 0 [Note] /opt/homebrew/Cellar/mariadb/10.6.3/bin/mariadbd: ready for connections.
+Version: '10.6.3-MariaDB'  socket: '/tmp/mysql.sock'  port: 3306  Homebrew

@@ -14,6 +14,8 @@ spring:
         git:
 #          uri: file:///Users/orsay0827/Projects/Spring-msa-config
           uri: https://github.com/junyoung1992/Spring-Cloud-Config.git
+#          username: [username]
+#          password: [password]
   rabbitmq:
     host: 127.0.0.1
     port: 5672

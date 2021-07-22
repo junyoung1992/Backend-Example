@@ -33,10 +33,14 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         // Actuator 정보는 권한 없이 사용할 수 있도록 설정
         http.authorizeRequests().antMatchers("/actuator/**").permitAll();
 
+
+        /* 도커에 올리니까 잘 작동하지 않음... 어떻게 고치지??? */
         http.authorizeRequests().antMatchers("/**")    // 모든 작업을 우선 차단
-                .hasIpAddress("172.30.1.16")    // 허용할 IP
+                .permitAll()
+//                .hasIpAddress("172.30.1.16")    // 허용할 IP
                 .and()
                 .addFilter(getAuthenticationFilter());
+
 
         // 프레임 상으로 구별되어 있는 HTTP 페이지에서 정상적으로 동작
         // 추가하지 않으면 h2-console 접근 안됨
