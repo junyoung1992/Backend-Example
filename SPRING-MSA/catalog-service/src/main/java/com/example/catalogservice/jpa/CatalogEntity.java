@@ -22,7 +22,7 @@ public class CatalogEntity {
     private String productName;
 
     @Column(nullable = false)
-    private Integer stock;
+    private Integer qty;
 
     @Column(nullable = false)
     private Integer unitPrice;

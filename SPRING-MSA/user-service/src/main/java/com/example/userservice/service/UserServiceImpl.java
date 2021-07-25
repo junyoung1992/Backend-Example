@@ -28,12 +28,9 @@ public class UserServiceImpl implements UserService{
 
     UserRepository userRepository;
     BCryptPasswordEncoder passwordEncoder;
-
     Environment env;
-//    RestTemplate restTemplate;
-
+//    private final RestTemplate restTemplate;
     OrderServiceClient orderServiceClient;
-
     CircuitBreakerFactory circuitBreakerFactory;
 
     @Autowired
@@ -89,7 +86,7 @@ public class UserServiceImpl implements UserService{
 
 //        String orderUrl = String.format(env.getProperty("order_service.url"), userId);
 //        /* Using as restTemplate */
-//       ResponseEntity<List<ResponseOrder>> orderListResponse =
+//        ResponseEntity<List<ResponseOrder>> orderListResponse =
 //                restTemplate.exchange(orderUrl, HttpMethod.GET, null,
 //                        new ParameterizedTypeReference<List<ResponseOrder>>() {
 //        });
@@ -113,6 +110,7 @@ public class UserServiceImpl implements UserService{
 //        List<ResponseOrder> ordersList = orderServiceClient.getOrders(userId);
 
         /* circuit breaker */
+        // 계속 404 에러가 나오는데 모르겠네...
         log.info("Before call orders microservice");
         CircuitBreaker circuitbreaker = circuitBreakerFactory.create("circuitbreaker");
         List<ResponseOrder> ordersList = circuitbreaker.run(

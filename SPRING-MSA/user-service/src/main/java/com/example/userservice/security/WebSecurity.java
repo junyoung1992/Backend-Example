@@ -14,10 +14,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
 
-    private UserService userService;
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
-    private Environment env;
+    private final UserService userService;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final Environment env;
 
+    @Autowired
     public WebSecurity(UserService userService, BCryptPasswordEncoder bCryptPasswordEncoder, Environment env) {
         this.userService = userService;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
@@ -41,17 +42,13 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .and()
                 .addFilter(getAuthenticationFilter());
 
-
         // 프레임 상으로 구별되어 있는 HTTP 페이지에서 정상적으로 동작
         // 추가하지 않으면 h2-console 접근 안됨
         http.headers().frameOptions().disable();
     }
 
     private AuthenticationFilter getAuthenticationFilter() throws Exception {
-        AuthenticationFilter authenticationFilter =
-                new AuthenticationFilter(authenticationManager(), userService, env);
-
-        return authenticationFilter;
+        return new AuthenticationFilter(authenticationManager(), userService, env);
     }
 
     // SELECT PWD FROM USERS WHERE email = ?

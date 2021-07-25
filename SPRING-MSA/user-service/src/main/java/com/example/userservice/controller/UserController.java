@@ -37,11 +37,11 @@ public class UserController {
     @GetMapping("/health_check")
     @Timed(value = "users.status", longTask = true)
     public String status() {
-        return String.format("It's working in user service"
-                + ", port(local.server.port) =" +  env.getProperty("local.server.port")
-                + ", port(server.port) =" +  env.getProperty("server.port")
-                + ", token secret =" +  env.getProperty("token.secret")
-                + ", token expiration time =" +  env.getProperty("token.expiration_time"));
+        return "It's working in user service"
+                + ", port(local.server.port) =" + env.getProperty("local.server.port")
+                + ", port(server.port) =" + env.getProperty("server.port")
+                + ", token secret =" + env.getProperty("token.secret")
+                + ", token expiration time =" + env.getProperty("token.expiration_time");
     }
 
     @GetMapping("/welcome")
@@ -70,9 +70,7 @@ public class UserController {
         Iterable<UserEntity> userList = userService.getUserByAll();
 
         List<ResponseUser> result = new ArrayList<>();
-        userList.forEach(v ->{
-            result.add(new ModelMapper().map(v, ResponseUser.class));
-        });
+        userList.forEach(v -> result.add(new ModelMapper().map(v, ResponseUser.class)));
 
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
