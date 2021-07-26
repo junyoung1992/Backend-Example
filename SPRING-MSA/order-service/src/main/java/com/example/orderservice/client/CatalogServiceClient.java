@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name="catalog-service")
 public interface CatalogServiceClient {
 
-    @GetMapping("catalog-service/catalogs/{productId}")
+    @GetMapping("/catalogs/{productId}")
     ResponseCatalog getCatalogs(@PathVariable("productId") String productId);
 
 }
