@@ -10,7 +10,6 @@ import org.springframework.kafka.support.SendResult;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.annotation.Documented;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
