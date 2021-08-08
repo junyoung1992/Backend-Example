@@ -10,8 +10,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.20'
-    implementation 'org.slf4j:slf4j-simple:1.7.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+
     implementation 'org.apache.kafka:kafka-clients:2.8.0'
     implementation 'org.apache.hadoop:hadoop-client:3.3.1'
 
