@@ -1,5 +1,6 @@
 package com.pipeline;
 
+import com.google.gson.Gson;
 import com.pipeline.config.ElasticSearchSinkConnectorConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHost;
@@ -17,7 +18,6 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
-import org.modelmapper.ModelMapper;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -66,7 +66,8 @@ public class ElasticSearchSinkTask extends SinkTask {
             BulkRequest bulkRequest = new BulkRequest();
 
             for (SinkRecord record: records) {
-                Map map = new ModelMapper().map(record.value().toString(), Map.class);
+                Gson gson = new Gson();
+                Map map = gson.fromJson(record.value().toString(), Map.class);
                 bulkRequest.add(new IndexRequest(config.getString(config.ES_INDEX))
                         .source(map, XContentType.JSON));
 

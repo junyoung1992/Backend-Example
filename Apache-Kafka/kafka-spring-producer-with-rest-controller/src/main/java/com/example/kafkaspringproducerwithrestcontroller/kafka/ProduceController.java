@@ -1,8 +1,7 @@
 package com.example.kafkaspringproducerwithrestcontroller.kafka;
 
 import com.example.kafkaspringproducerwithrestcontroller.vo.UserEventVO;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -14,7 +13,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Slf4j
-@RequestMapping("")
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")   // REST API 를 다른 도메인에서도 호출할 수 있도록 CORS 설정
 public class ProduceController {
@@ -35,13 +33,8 @@ public class ProduceController {
 
         UserEventVO userEventVO = new UserEventVO(simpleDateFormat.format(now), userAgentName, colorName, userName);
 
-        ObjectMapper mapper = new ObjectMapper();
-        String jsonColorLog = "";
-        try {
-            jsonColorLog = mapper.writeValueAsString(userEventVO);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
+        Gson gson = new Gson();
+        String jsonColorLog = gson.toJson(userEventVO);
 
         // "select-color" 토픽으로 jsonColorLog 전송
         // 메시지 키를 지정하지 않으므로 send() 메서드에는 토픽과 메시지 값만 있으면 됨

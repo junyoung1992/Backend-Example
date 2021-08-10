@@ -3,6 +3,7 @@ package com.pipeline;
 import com.pipeline.config.ElasticSearchSinkConnectorConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.common.config.ConfigDef;
+import org.apache.kafka.common.config.ConfigException;
 import org.apache.kafka.connect.connector.Task;
 import org.apache.kafka.connect.errors.ConnectException;
 import org.apache.kafka.connect.sink.SinkConnector;
@@ -41,7 +42,7 @@ public class ElasticSearchSinkConnector extends SinkConnector {
 
         try {
             new ElasticSearchSinkConnectorConfig(props);
-        } catch (Exception e) {
+        } catch (ConfigException e) {
             throw new ConnectException(e.getMessage(), e);
         }
     }
@@ -59,7 +60,8 @@ public class ElasticSearchSinkConnector extends SinkConnector {
     // 태스크별로 다른 설정값을 부여할 경우 여기에 로직을 넣을 수 있다.
     // 여기서는 모든 태스크에 동일한 설정값을 설정한다.
     public List<Map<String, String>> taskConfigs(int maxTasks) {
-        Map<String, String> taskProps = new HashMap<>(configProperties);
+        Map<String, String> taskProps = new HashMap<>();
+        taskProps.putAll(configProperties);
 
         List<Map<String, String>> taskConfigs = new ArrayList<>();
         for (int i = 0; i < maxTasks; i++) {

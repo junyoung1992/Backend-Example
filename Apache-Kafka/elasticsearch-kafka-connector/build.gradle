@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'org.pipeline'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 jar {
     from {
@@ -11,6 +11,7 @@ jar {
             it.isDirectory() ? it : zipTree(it)
         }
     }
+    duplicatesStrategy(DuplicatesStrategy.INCLUDE)
 }
 
 repositories {
@@ -18,7 +19,8 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.modelmapper:modelmapper:2.3.8'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.fasterxml:jackson-xml-databind:0.6.2'
     compileOnly 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
     implementation 'org.apache.kafka:connect-api:2.8.0'
