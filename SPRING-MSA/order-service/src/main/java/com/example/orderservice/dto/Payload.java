@@ -3,6 +3,8 @@ package com.example.orderservice.dto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 @Builder
 public class Payload {
@@ -13,5 +15,6 @@ public class Payload {
     private int qty;
     private int unit_price;
     private int total_price;
+    private Date orderDatetime;
 
 }

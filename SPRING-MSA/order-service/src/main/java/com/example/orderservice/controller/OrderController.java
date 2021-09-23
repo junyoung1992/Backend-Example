@@ -86,7 +86,7 @@ public class OrderController {
         ResponseOrder responseOrder = mapper.map(createOrder, ResponseOrder.class);
 
         /* kafka */
-        orderDto.setOrderId(UUID.randomUUID().toString());
+//        orderDto.setOrderId(UUID.randomUUID().toString());
 //        orderDto.setTotalPrice(orderDetails.getQty() * orderDetails.getUnitPrice());
 //        ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
 

@@ -18,6 +18,7 @@ public class OrderEntity implements Serializable {
      *  user_id varchar(50) not null,
      *  product_id varchar(20) not null,
      *  order_id varchar(50) not null,
+     *  order_datetime datetime not null,
      *  qty int default 0,
      *  unit_price int default 0,
      *  total_price int default 0,
@@ -45,6 +46,9 @@ public class OrderEntity implements Serializable {
 
     @Column(nullable = false, unique = true)
     private String orderId;
+
+    @Column(nullable = false)
+    private Date orderDatetime;
 
     @Column(nullable = false, updatable = false, insertable = false)
     @ColumnDefault(value = "CURRENT_TIMESTAMP")

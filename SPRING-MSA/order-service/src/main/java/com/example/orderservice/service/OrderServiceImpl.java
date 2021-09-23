@@ -14,6 +14,8 @@ import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
 import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -52,6 +54,9 @@ public class OrderServiceImpl implements OrderService {
         log.info(String.format("ProductId: %s - Price: %d", orderDto.getProductId(), orderDto.getUnitPrice()));
 
         orderDto.setTotalPrice(orderDto.getQty() * orderDto.getUnitPrice());
+
+        LocalDateTime orderDateTime = LocalDateTime.now();
+        orderDto.setOrderDatetime(Timestamp.valueOf(orderDateTime));
 
         // orderDto -> orderEntity
         ModelMapper mapper = new ModelMapper();
