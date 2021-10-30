@@ -13,7 +13,7 @@ public class OrderDto implements Serializable {
     private Integer qty;
     private Integer unitPrice;
     private Integer totalPrice;
-    private Date orderDatetime;
+    private String orderDatetime;
 
     private String orderId;
     private String userId;

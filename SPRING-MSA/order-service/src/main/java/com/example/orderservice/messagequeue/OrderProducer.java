@@ -24,7 +24,8 @@ public class OrderProducer {
             new Field("string", true, "product_id"),
             new Field("int32", true, "qty"),
             new Field("int32", true, "unit_price"),
-            new Field("int32", true, "total_price"));
+            new Field("int32", true, "total_price"),
+            new Field("string", true, "order_datetime"));
 
     private Schema schema = Schema.builder()
             .type("struct")
@@ -46,6 +47,7 @@ public class OrderProducer {
                 .qty(orderDto.getQty())
                 .unit_price(orderDto.getUnitPrice())
                 .total_price(orderDto.getTotalPrice())
+                .order_datetime(orderDto.getOrderDatetime())
                 .build();
 
         KafkaOrderDto kafkaOrderDto = new KafkaOrderDto(schema, payload);

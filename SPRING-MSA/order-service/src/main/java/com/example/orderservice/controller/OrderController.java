@@ -86,13 +86,13 @@ public class OrderController {
         ResponseOrder responseOrder = mapper.map(createOrder, ResponseOrder.class);
 
         /* kafka */
-//        orderDto.setOrderId(UUID.randomUUID().toString());
-//        orderDto.setTotalPrice(orderDetails.getQty() * orderDetails.getUnitPrice());
-//        ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
+        // orderDto.setOrderId(UUID.randomUUID().toString());
+        // orderDto.setTotalPrice(orderDetails.getQty() * orderDetails.getUnitPrice());
+        // ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
 
         /* send this order to the kafka */
-        kafkaProducer.send("example-catalog-topic", orderDto);
-//        orderProducer.send("orders", orderDto);
+        kafkaProducer.send("log-order", orderDto);
+        orderProducer.send("orders", orderDto);
         log.info("After add orders microservice");
 
         return ResponseEntity.status(HttpStatus.CREATED).body(responseOrder);

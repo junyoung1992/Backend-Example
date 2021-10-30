@@ -24,7 +24,7 @@ public class KafkaConsumer {
         this.repository = repository;
     }
 
-    @KafkaListener(topics = "example-catalog-topic")
+    @KafkaListener(topics = "log-order")
     public void updateQty(String kafkaMessage) {
         log.info("Kafka Message: -> " + kafkaMessage);
 

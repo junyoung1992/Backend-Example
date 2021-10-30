@@ -14,8 +14,9 @@ import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
 import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.UUID;
 
 @Data
@@ -55,15 +56,17 @@ public class OrderServiceImpl implements OrderService {
 
         orderDto.setTotalPrice(orderDto.getQty() * orderDto.getUnitPrice());
 
-        LocalDateTime orderDateTime = LocalDateTime.now();
-        orderDto.setOrderDatetime(Timestamp.valueOf(orderDateTime));
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZZ");
+        Date orderDatetime = new Date();
+        orderDto.setOrderDatetime(simpleDateFormat.format(orderDatetime));
 
         // orderDto -> orderEntity
         ModelMapper mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         OrderEntity orderEntity = mapper.map(orderDto, OrderEntity.class);
 
-        orderRepository.save(orderEntity);
+        // Kafka 를 사용하기 위해 비활성화
+        // orderRepository.save(orderEntity);
 
         return mapper.map(orderEntity, OrderDto.class);
     }

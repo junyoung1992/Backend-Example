@@ -15,6 +15,6 @@ public class Payload {
     private int qty;
     private int unit_price;
     private int total_price;
-    private Date orderDatetime;
+    private String order_datetime;
 
 }
