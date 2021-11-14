@@ -35,7 +35,7 @@ public class MessageSourceTest {
     }
 
     @Test
-    void argumentMesasge() {
+    void argumentMessage() {
         String result = ms.getMessage("hello.name", new Object[]{"Spring"}, null);
         assertThat(result).isEqualTo("안녕 Spring");
     }
