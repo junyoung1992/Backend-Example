@@ -83,4 +83,5 @@ public class ElasticSearchSinkConnector extends SinkConnector {
     public ConfigDef config() {
         return ElasticSearchSinkConnectorConfig.CONFIG;
     }
+
 }
