@@ -38,3 +38,6 @@
 
 - 화폐 예제
 - xUnit 예시
+
+**[Reference] Django Tutorial**<br />
+*<https://docs.djangoproject.com/ko/3.2/>*
