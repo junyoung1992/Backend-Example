@@ -1,0 +1,13 @@
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        {% comment %}
+            polls.urls 모듈의 path() 함수에서 인수의 이름을 정의했으므로,
+            {% url %} template 태그를 사용하여 url 설정에 정의된 특정한 URL 경로들의 의존성을 제거할 수 있다.
+        {% endcomment %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

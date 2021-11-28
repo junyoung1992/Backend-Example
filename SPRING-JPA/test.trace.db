@@ -1,0 +1,375 @@
+2021-11-27 21:01:38 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 8 more
+2021-11-27 21:01:38 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 9 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 6 more
+2021-11-27 21:02:28 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 8 more
+2021-11-27 21:02:28 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 9 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 6 more
+2021-11-27 21:02:57 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 8 more
+2021-11-27 21:02:57 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 9 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 6 more
+2021-11-27 21:04:34 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 8 more
+2021-11-27 21:04:34 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 9 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 6 more
+2021-11-27 21:04:58 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:342)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1029)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 16 more
+2021-11-27 21:04:58 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:342)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1029)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 17 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 14 more
+2021-11-27 21:05:39 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:342)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.test(WebApp.java:968)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 16 more
+2021-11-27 21:05:39 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:342)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.test(WebApp.java:968)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 17 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 14 more
+2021-11-27 21:07:44 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	... 8 more
+2021-11-27 21:07:44 database: opening /Users/junyoung/Projects/Backend-Examples/SPRING-JPA/test
+org.h2.message.DbException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:166)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:325)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.202/5]" [50000-202]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 9 more
+Caused by: org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+	at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 6 more
