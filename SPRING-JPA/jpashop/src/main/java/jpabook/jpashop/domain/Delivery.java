@@ -9,7 +9,7 @@ import static javax.persistence.FetchType.*;
 
 @Entity
 @Getter @Setter
-public class Delivery extends BaseEntity {
+public class Delivery {
 
     @Id @GeneratedValue
     @Column(name = "delivery_id")

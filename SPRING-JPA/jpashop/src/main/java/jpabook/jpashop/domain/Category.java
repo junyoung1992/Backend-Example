@@ -12,7 +12,7 @@ import static javax.persistence.FetchType.*;
 
 @Entity
 @Getter @Setter
-public class Category extends BaseEntity {
+public class Category {
 
     @Id @GeneratedValue
     @Column(name = "category_id")
