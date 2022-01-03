@@ -19,7 +19,7 @@ class MemberTest {
     @Autowired EntityManager em;
 
     @Test
-    public void testEntity() throws Exception {
+    public void testEntity() {
         // given
         Team teamA = new Team("TeamA");
         Team teamB = new Team("TeamB");
