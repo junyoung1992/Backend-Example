@@ -1,0 +1,46 @@
+logging:
+  level:
+    org.springframework: info;
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/restapi?serverTimezone=Asia/Seoul
+    username: restapi
+    password: restapi
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database: mysql
+    defer-datasource-initialization: true # data.sql 실행을 위해 설정: spring 2.5.x ~
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  messages:
+    basename: messages
+#  security:
+#    user:
+#      name: username
+#      password: password
+  sql:
+    init:
+      mode: always  # data.sql 실행을 위해 설정: spring 2.5.x ~
+
+
+springdoc:
+  swagger-ui:
+    path: index.html
+  version: v1
+  paths-to-match:
+    - /users/*
