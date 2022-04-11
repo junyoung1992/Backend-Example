@@ -41,7 +41,7 @@ class StudyTest {
 //                () -> assertEquals(StudyStatus.DRAFT, study.getStatus(), "스터디를 처음 만들면 상태값이 DRAFT여야 한다.")
                 () ->assertEquals(StudyStatus.DRAFT, study.getStatus(),
                     () -> "스터디를 처음 만들면" + StudyStatus.DRAFT + " 상태다"),
-                () ->assertTrue(study.getLimit() > 0, "스터디 최대 참석 가능 인원은 0보다 커야 한다.")
+                () ->assertTrue(study.getLimitCount() > 0, "스터디 최대 참석 가능 인원은 0보다 커야 한다.")
         );
 
         assertTimeout(Duration.ofMillis(100), () -> {
@@ -75,7 +75,7 @@ class StudyTest {
         assumingThat("LOCAL".equalsIgnoreCase(test_env), () -> {
             System.out.println("LOCAL");
             Study actual = new Study(10);
-            assertThat(actual.getLimit()).isGreaterThan(0);
+            assertThat(actual.getLimitCount()).isGreaterThan(0);
         });
     }
 
@@ -105,7 +105,7 @@ class StudyTest {
     @ParameterizedTest(name = "{index} {displayName} message={0}")
     @ValueSource(ints = {10, 20, 30})
     void parameterizedTest2(@ConvertWith(StudyConverter.class) Study study) {
-        System.out.println(study.getLimit());
+        System.out.println(study.getLimitCount());
     }
 
     static class StudyConverter extends SimpleArgumentConverter {

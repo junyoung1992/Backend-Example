@@ -1,8 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/restapi?serverTimezone=Asai/Seoul
-    username: restapi
-    password: restapi
+    url: jdbc:mysql://localhost:3306/dummy?serverTimezone=Asia/Seoul
+    username: dummy
+    password: dummy
   jpa:
     database: mysql
