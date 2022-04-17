@@ -1,13 +1,11 @@
 package me.whiteship.inflearnthejavatest.ch3_testcontainer;
 
-import lombok.extern.slf4j.Slf4j;
 import me.whiteship.inflearnthejavatest.domain.Member;
 import me.whiteship.inflearnthejavatest.domain.Study;
 import me.whiteship.inflearnthejavatest.domain.StudyStatus;
 import me.whiteship.inflearnthejavatest.member.MemberService;
 import me.whiteship.inflearnthejavatest.study.StudyRepository;
 import me.whiteship.inflearnthejavatest.study.StudyService;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

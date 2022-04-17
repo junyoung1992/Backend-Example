@@ -6,3 +6,5 @@ spring:
     password: dummy
   jpa:
     database: mysql
+    hibernate:
+      ddl-auto: create-drop
