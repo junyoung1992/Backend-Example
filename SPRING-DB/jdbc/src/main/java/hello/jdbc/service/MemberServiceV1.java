@@ -16,7 +16,7 @@ public class MemberServiceV1 {
         Member toMember = memberRepositoryV1.findById(toId);
 
         memberRepositoryV1.update(fromId, fromMember.getMoney() - money);
-        validation(toMember);   // 예외 상황 테스트를 위한 코드
+//        validation(toMember);   // 예외 상황 테스트를 위한 코드
         memberRepositoryV1.update(toId, toMember.getMoney() + money);
     }
 
