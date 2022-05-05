@@ -10,12 +10,9 @@
 - 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술
 - 스프링 핵심 원리 - 기본편
 - 스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술
-
-**[Inflearn] 우아한형제들 개발팀장 김영한의 스프링 완전 정복 강의 로드맵**<br />
-*<https://www.inflearn.com/roadmaps/373>*
-
 - 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술
 - 스프링 핵심 원리 - 고급편
+- 스프링 DB 1편 - 데이터 접근 핵심 원리
 
 **[Inflearn] 김영한의 스프링 부트와 JPA 실무 완전 정복 로드맵**<br />
 *<https://www.inflearn.com/roadmaps/149>*
@@ -31,6 +28,9 @@
 
 - Sprting Boot를 이용한 RESTful Web Services 개발
 - Spring Cloud로 개발하는 마이크로서비스 애플리케이션
+
+**[Inflearn] 코딩으로 학습하는 리팩토링**<br />
+*<https://www.inflearn.com/course/리팩토링>*
 
 **[Book] 아파치 카프카 애플리케이션 프로그래밍 with 자바**
 
