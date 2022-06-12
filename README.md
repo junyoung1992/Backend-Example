@@ -42,5 +42,7 @@
 - 화폐 예제
 - xUnit 예시
 
+**[Book] 만들면서 배우는 클린 아키텍처**<br />
+
 **[Reference] Django Tutorial**<br />
 *<https://docs.djangoproject.com/ko/3.2/>*
