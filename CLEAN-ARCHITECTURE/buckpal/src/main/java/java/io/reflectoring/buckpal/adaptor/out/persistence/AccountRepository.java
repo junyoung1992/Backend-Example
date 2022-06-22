@@ -1,0 +1,6 @@
+package java.io.reflectoring.buckpal.adaptor.out.persistence;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AccountRepository extends JpaRepository<AccountJpaEntity, Long> {
+}
