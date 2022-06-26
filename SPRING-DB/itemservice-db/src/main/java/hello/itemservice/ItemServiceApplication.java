@@ -1,6 +1,6 @@
 package hello.itemservice;
 
-import hello.itemservice.config.JdbcTemplateV3Config;
+import hello.itemservice.config.MybatisConfig;
 import hello.itemservice.repository.ItemRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
 //@Slf4j
-@Import(JdbcTemplateV3Config.class)
+@Import(MybatisConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 

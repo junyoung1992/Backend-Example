@@ -15,7 +15,12 @@ spring:
 #        show_sql: true
 #        use_sql_comments: true
 
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: hello.itemservice.domain
+
 logging:
   level:
-    org.hibernate:
-      sql: debug
+    org.springframework.jdbc: debug
+    hello.itemservice.repository.mybatis: trace
