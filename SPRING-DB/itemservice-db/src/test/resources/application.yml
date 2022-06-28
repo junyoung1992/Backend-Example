@@ -1,11 +1,6 @@
 spring:
   profiles:
     active: test
-#  datasource:
-#    url: jdbc:h2:tcp://localhost/~/Projects/Backend-Examples/SPRING-DB/testcase
-#    username: sa
-#    password:
-#    driver-class-name: org.h2.Driver
 
 mybatis:
   configuration:
@@ -16,3 +11,5 @@ logging:
   level:
     org.springframework.jdbc: debug
     hello.itemservice.repository.mybatis: trace
+    org.hibernate.sql: debug
+    org.hibernate.type: trace
