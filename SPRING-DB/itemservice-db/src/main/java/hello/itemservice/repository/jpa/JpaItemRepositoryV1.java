@@ -1,6 +1,9 @@
-package hello.itemservice.repository;
+package hello.itemservice.repository.jpa;
 
 import hello.itemservice.domain.Item;
+import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.repository.ItemSearchCond;
+import hello.itemservice.repository.ItemUpdateDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
@@ -17,7 +20,7 @@ import java.util.Optional;
 @Repository
 @Transactional
 @RequiredArgsConstructor
-public class JpaItemRepository implements ItemRepository {
+public class JpaItemRepositoryV1 implements ItemRepository {
 
     private final EntityManager em;
 
