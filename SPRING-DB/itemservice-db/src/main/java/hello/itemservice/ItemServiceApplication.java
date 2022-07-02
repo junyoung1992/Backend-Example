@@ -1,6 +1,6 @@
 package hello.itemservice;
 
-import hello.itemservice.config.SpringDataJpaConfig;
+import hello.itemservice.config.V2Config;
 import hello.itemservice.repository.ItemRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
 //@Slf4j
-@Import(SpringDataJpaConfig.class)
+@Import(V2Config.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
