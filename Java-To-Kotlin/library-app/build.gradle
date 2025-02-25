@@ -6,6 +6,7 @@ plugins {
     id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21'
     id 'org.jetbrains.kotlin.plugin.spring' version '1.6.21'
     id "org.jetbrains.kotlin.plugin.allopen" version "1.6.21"
+    id 'org.jetbrains.kotlin.kapt' version '1.6.21'
 }
 
 allOpen {
@@ -29,8 +30,11 @@ dependencies {
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.17.3'
 
     // spring
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.querydsl:querydsl-jpa:5.0.0'
+    kapt('com.querydsl:querydsl-apt:5.0.0:jpa')
+    kapt('org.springframework.boot:spring-boot-configuration-processor')
 
     // database
     runtimeOnly 'com.h2database:h2'
